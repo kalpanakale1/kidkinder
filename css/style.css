@@ -1,0 +1,235 @@
+:root {
+  --bs-primary: #17a2b8;
+  --bs-primary-rgb: 23, 162, 184;
+  --t-secondary: #00394f;
+  --t-secondary-rgb: 0, 57, 79;
+}
+
+body, button, input {
+  font-family: "Nunito";
+}
+
+.font-handlee {
+  font-family: "Handlee";
+}
+
+.padding-70 {
+  padding: 70px 0;
+}
+
+.t-secondary {
+  color: var(--t-secondary);
+}
+
+.social-bg {
+  background-color: rgba(23, 163, 184, 0.5921568627);
+}
+
+nav .navbar-brand img {
+  max-width: 50px;
+}
+nav .navbar-nav .nav-item .nav-link {
+  color: black;
+}
+nav .navbar-nav .nav-link.active, nav .navbar-nav .show > .nav-link {
+  color: var(--bs-primary) !important;
+}
+nav .nav-link:focus, nav .nav-link:hover {
+  color: var(--bs-primary) !important;
+}
+
+.btn-bg {
+  background-color: var(--bs-primary);
+  transition: all 0.5s;
+}
+.btn-bg:hover {
+  background-color: #138496 !important;
+}
+
+.banner .banner-content .btn-bg {
+  background-color: #00394f;
+}
+.banner .banner-content .btn-bg:hover {
+  background-color: #001d29 !important;
+}
+
+.heading h4::before {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 2px;
+  background-color: #17a2b8;
+  right: -60px;
+  top: 43%;
+  margin: auto;
+}
+
+.common-heading h6::before {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 2px;
+  background-color: #17a2b8;
+  left: -60px;
+  top: 45%;
+}
+.common-heading h6::after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 2px;
+  background-color: #17a2b8;
+  right: -60px;
+  top: 45%;
+}
+
+.booking .card .card-header {
+  background-color: #00394f;
+}
+.booking .card .card-body {
+  background-color: #17a2b8;
+}
+.booking .card form select {
+  cursor: pointer;
+}
+.booking .card form .btn-bg {
+  background-color: #00394f;
+}
+.booking .card form .btn-bg:hover {
+  background-color: #001d29 !important;
+}
+
+.teachers .team-info:hover .team-img .social {
+  visibility: visible;
+  opacity: 1;
+}
+.teachers .team-info .team-img .social {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.teachers .team-info .team-img .social a {
+  transition: all 0.5s;
+}
+.teachers .team-info .team-img .social a:hover {
+  color: black !important;
+  background-color: white !important;
+}
+
+.testimonial .swiper-pagination-bullet-active {
+  background: #17a2b8 !important;
+  padding: 5px;
+}
+.testimonial .swiper-pagination-bullet {
+  padding: 5px;
+}
+
+.footer-bg {
+  background-color: #001d29;
+}
+.footer-bg a img {
+  width: 60px;
+}
+.footer-bg .icon a {
+  transition: all 0.5s;
+}
+.footer-bg .icon a:hover {
+  color: white !important;
+  background-color: var(--bs-primary) !important;
+}
+.footer-bg ul li a {
+  transition: all 0.5s;
+}
+.footer-bg ul li:hover a {
+  letter-spacing: 1px !important;
+}
+.footer-bg .copy-right {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.footer-bg .copy-right:hover {
+  color: #138496 !important;
+  text-decoration: underline !important;
+}
+
+.projects .nav-tabs .nav-link:focus, .projects .nav-tabs .nav-link:hover {
+  border-color: transparent;
+}
+.projects .nav-tabs .nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.projects .project-work {
+  overflow: hidden;
+}
+.projects .project-work img {
+  transition: all 0.5s;
+}
+.projects .project-work:hover .project-info {
+  opacity: 1;
+  overflow: hidden;
+}
+.projects .project-info {
+  opacity: 0;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+.projects .project-info i {
+  cursor: pointer;
+}
+.projects .nav-tabs .nav-item.show .nav-link, .projects .nav-tabs .nav-link.active {
+  color: white !important;
+  background-color: #17a2b8 !important;
+}
+
+.back-to-top-btn {
+  display: none;
+  animation: bounce 1s infinite alternate;
+  transition: all 0.5s;
+}
+
+.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.blog-d .blog-heading h6 {
+  position: relative;
+}
+.blog-d .blog-heading h6::after {
+  position: absolute;
+  content: "";
+  width: 80%;
+  height: 2px;
+  background-color: #17a2b8;
+  margin: 0 10px;
+  top: 40%;
+}
+.blog-d .comments .comment a {
+  transition: all 0.5s;
+}
+.blog-d .comments .comment a:hover {
+  background-color: #e5e5e5;
+}
+.blog-d .categories .a-link a {
+  transition: all 0.5s;
+}
+.blog-d .categories .a-link a:hover {
+  text-decoration: underline !important;
+  color: #0f6674 !important;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(15px);
+  }
+}
+html {
+  scroll-behavior: smooth;
+}/*# sourceMappingURL=style.css.map */
